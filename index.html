@@ -51,6 +51,12 @@
           </li>
         </ul>
       </address>
+
+      <button class="header-open-menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="header-open-menu-btn-icon" width="32" height="22" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <use href="./images/icons.svg#icon-burger-menu"></use>
+        </svg>
+      </button>
     </div>
   </header>
 
@@ -74,8 +80,8 @@
           Advantages
         </h2>
 
-        <ul class="advantages-list list">
-          <li class="advantages-list-item">
+        <ul class="advantages-list list card-set">
+          <li class="advantages-list-item card-set-item">
             <div class="advantages-icon-container">
               <svg class="advantages-icon" height="64" width="64">
                 <use href="./images/icons.svg#icon-antenna"></use>
@@ -87,7 +93,7 @@
               the perfect and creative solution.
             </p>
           </li>
-          <li class="advantages-list-item">
+          <li class="advantages-list-item card-set-item">
             <div class="advantages-icon-container">
               <svg class="advantages-icon" height="64" width="64">
                 <use href="./images/icons.svg#icon-clock"></use>
@@ -101,7 +107,7 @@
               within the shortest possible time.
             </p>
           </li>
-          <li class="advantages-list-item">
+          <li class="advantages-list-item card-set-item">
             <div class="advantages-icon-container">
               <svg class="advantages-icon" height="64" width="64">
                 <use href="./images/icons.svg#icon-diagram"></use>
@@ -113,7 +119,7 @@
               growth opportunities and minimize risk.
             </p>
           </li>
-          <li class="advantages-list-item">
+          <li class="advantages-list-item card-set-item">
             <div class="advantages-icon-container">
               <svg class="advantages-icon" height="64" width="64">
                 <use href="./images/icons.svg#icon-astronaut"></use>
@@ -155,8 +161,8 @@
     <section class="team">
       <div class="team-conteiner container">
         <h2 class="team-title section-title">Our Team</h2>
-        <ul class="team-list list">
-          <li class="team-list-item">
+        <ul class="team-list list card-set">
+          <li class="team-list-item card-set-item">
             <img class="team-list-img" src="./images/MainPage/Our-Team/01.jpg" alt="Mark Guerrero" width="264" />
             <div class="team-list-text-container">
               <h3 class="team-list-title in-section-title">Mark Guerrero</h3>
@@ -193,7 +199,7 @@
               </ul>
             </div>
           </li>
-          <li class="team-list-item">
+          <li class="team-list-item card-set-item">
             <img class="team-list-img" src="./images/MainPage/Our-Team/02.jpg" alt="Tom Ford" width="264" />
             <div class="team-list-text-container">
               <h3 class="team-list-title in-section-title">Tom Ford</h3>
@@ -230,7 +236,7 @@
               </ul>
             </div>
           </li>
-          <li class="team-list-item">
+          <li class="team-list-item card-set-item">
             <img class="team-list-img" src="./images/MainPage/Our-Team/03.jpg" alt="Camila Garcia" width="264" />
             <div class="team-list-text-container">
               <h3 class="team-list-title in-section-title">Camila Garcia</h3>
@@ -267,7 +273,7 @@
               </ul>
             </div>
           </li>
-          <li class="team-list-item">
+          <li class="team-list-item card-set-item">
             <img class="team-list-img" src="./images/MainPage/Our-Team/04.jpg" alt="Daniel Wilson" width="264" />
             <div class="team-list-text-container">
               <h3 class="team-list-title in-section-title">Daniel Wilson</h3>
@@ -411,7 +417,8 @@
         <p class="footer-subscribe-form-title insection-title">Subscribe</p>
         <form class="footer-subscribe-form" name="subscribe_form">
           <label for="subscribe-field" class="footer-subscribe-form-label">
-            <input class="footer-subscribe-form-input" id="subscribe-field" type="email" name="email-field-subscribe" placeholder="E-mail"/>
+            <input class="footer-subscribe-form-input" id="subscribe-field" type="email" name="email-field-subscribe"
+              placeholder="E-mail" />
           </label>
 
           <button class="footer-subscribe-form-btn btn" type="submit">
@@ -428,8 +435,8 @@
   <!-- ▮▯⁘⁘⁘⁘⁘  Modal window  ⁘⁘⁘⁘⁘▯▮ -->
   <div class="modal-backing is-hidden" data-modal>
     <div class="modal">
-      <button class="modal-close-btn" type="button" data-modal-close>
-        <svg class="modal-close-btn-icon" height="8" width="8">
+      <button class="modal-close-btn close-btn" type="button" data-modal-close>
+        <svg class="modal-close-btn-icon close-btn-icon" height="8" width="8">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
@@ -486,7 +493,8 @@
               </svg>
             </span>
             I accept the terms and conditions of the
-            <a class="user-privacy-label-link" href="" target="_blank"> Privacy Policy</a>
+            <a class="user-privacy-label-link" href="" target="_blank">
+              Privacy Policy</a>
           </label>
         </div>
 
@@ -494,7 +502,80 @@
       </form>
     </div>
   </div>
+
+  <!-- ▮▯⁘⁘⁘⁘⁘  Mobile menu  ⁘⁘⁘⁘⁘▯▮ -->
+  <div class="mobile-menu js-menu-container" id="mobile-menu">
+    <button class="mobile-menu-close-btn js-close-menu close-btn">
+      <svg class="mobile-menu-close-btn-icon close-btn-icon" height="8" width="8">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    
+    <nav class="mobile-menu-navigation">
+      <ul class="mobile-menu-navigation-list list">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link active-page" href="./index.html">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="./portfolio.html">
+            Portfolio
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="">Contacts</a>
+        </li>
+      </ul>
+    </nav>    
+
+    <address class="mobile-menu-contacts">
+      <ul class="mobile-menu-contacts-list list">
+        <li class="mobile-menu-contacts-item">
+          <a class="mobile-menu-contacts-link link" href="tel:+110001111111">
+            +11 (000) 111-11-11
+          </a>
+        </li>
+        <li class="mobile-menu-contacts-item">
+          <a class="mobile-menu-contacts-link link" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+        </li>       
+      </ul>
+    </address>
+
+    <ul class="mobile-menu-icon-list list">
+      <li class="mobile-menu-icon-item">
+        <a href="" class="mobile-menu-icon-link">
+          <svg class="mobile-menu-icon" height="16" width="16">
+            <use href="./images/icons.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="mobile-menu-icon-item">
+        <a href="" class="mobile-menu-icon-link">
+          <svg class="mobile-menu-icon" height="16" width="16">
+            <use href="./images/icons.svg#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="mobile-menu-icon-item">
+        <a href="" class="mobile-menu-icon-link">
+          <svg class="mobile-menu-icon" height="16" width="16">
+            <use href="./images/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="mobile-menu-icon-item">
+        <a href="" class="mobile-menu-icon-link">
+          <svg class="mobile-menu-icon" height="16" width="16">
+            <use href="./images/icons.svg#icon-linkedin"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
