@@ -959,12 +959,17 @@ input[type='checkbox']:checked + label > .checkbox {
   }
   .subscribe-field,
   .footer-subscribe-form-input{
-    min-width: 390px;
-    width: 100%;
+    min-width: 300px;
   }
   .footer-subscribe-form-btn{
     max-width: 165px;
     margin: 0 auto;
+  }
+}
+@media screen and (min-width: 420px) {
+  .subscribe-field,
+  .footer-subscribe-form-input{
+    min-width: 390px;
   }
 }
 @media screen and (min-width: 751px) {
