@@ -285,6 +285,11 @@ input[type='checkbox']:checked + label > .checkbox {
   padding: 188px 0;
   max-width: 1440px;
   margin: 0 auto;
+  background-image: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+  ),
+  url(../images/MainPage/Hero/Hero-bg.jpg);
 
   background-repeat: no-repeat;
   background-position: center;
@@ -516,6 +521,7 @@ input[type='checkbox']:checked + label > .checkbox {
   --column-count: 4;
   margin: 0 auto;
   justify-content: center;
+  flex-wrap: nowrap;
 }
 .team-list-item {  
   max-width: 264px;
@@ -579,9 +585,10 @@ input[type='checkbox']:checked + label > .checkbox {
     row-gap: 72px;
   }
 }
-@media screen and (min-width: 520px) and (max-width: 1158px) {
+@media screen and (min-width: 0px) and (max-width: 1158px) {
   .team-list {
     max-width: 552px;
+    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 0px) {
@@ -609,7 +616,7 @@ input[type='checkbox']:checked + label > .checkbox {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  
   gap: 24px;
   row-gap: 72px;
 }
@@ -654,6 +661,7 @@ input[type='checkbox']:checked + label > .checkbox {
 @media screen and (min-width: 0px) and (max-width: 1158px) {
   .customers-list {
     max-width: 552px;
+    flex-wrap: wrap;
     margin: 0 auto;
   }
 }
